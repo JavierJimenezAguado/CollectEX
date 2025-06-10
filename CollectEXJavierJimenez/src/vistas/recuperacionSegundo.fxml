@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane styleClass="fondos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.RecuperacionDosController">
+   <children>
+      <VBox id="panelUsuarioCorreo" alignment="CENTER" layoutX="58.0" layoutY="36.0" prefHeight="632.0" prefWidth="459.0" >
+         <children>
+            <Label id="txtRegistro" alignment="CENTER" text="Recuperar cuenta" textAlignment="CENTER" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="-150.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="142.0" prefHeight="94.0" prefWidth="328.0" styleClass="subtituloSeccion" text="Hemos enviado un código de numérico de 6 cifras para la recuperacion de contraseña" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" styleClass="textosCajas" text="Introduzca el código">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="txtCodigo" fx:id="txtCodigo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="310.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button id="btnContinuar" defaultButton="true" alignment="CENTER" mnemonicParsing="false" onAction="#irAPasoTres" styleClass="btncontinuar" text="🢂">
+               <VBox.margin>
+                  <Insets bottom="-50.0" top="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label id="txtNoValido" fx:id="txtNoValido" alignment="CENTER" layoutX="99.0" layoutY="144.0" styleClass="textosCajas" text="El código no es correcto" visible="false">
+               <VBox.margin>
+                  <Insets top="-50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="-210.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

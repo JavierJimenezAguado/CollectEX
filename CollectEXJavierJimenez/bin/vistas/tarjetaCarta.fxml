@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="tarjetaCarta" onMouseClicked="#click" prefHeight="260" prefWidth="180" styleClass="tarjeta-carta" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TarjetaCartaController"
+>
+
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" styleClass="tarjetaCarta"  AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+            <ImageView fx:id="imagenCarta" fitHeight="150" fitWidth="120" preserveRatio="true" />
+
+            <Label fx:id="nombreCarta" styleClass="titulo-carta" text="Nombre carta" />
+
+            <Label fx:id="precioCarta" styleClass="titulo-carta" text="Precio: 12.50€" />
+
+        </VBox>
+    </children>
+</AnchorPane>

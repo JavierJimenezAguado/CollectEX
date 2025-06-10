@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane fx:id="panelPrincipal" prefHeight="720.0" prefWidth="1280.0" styleClass="root" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.InteriorColeccionController">
+    <children>
+       
+        
+        <VBox prefHeight="720.0" prefWidth="1280.0">
+        
+          <HBox fx:id="panelSuperior" prefHeight="54.0" prefWidth="1280.0" styleClass="panelSuperior">
+		    <children>
+		
+		        <Pane fx:id="logoEsquina" prefHeight="54.0" prefWidth="74.0" styleClass="logoEsquina">
+		            <padding><Insets left="10.0" /></padding>
+		            <HBox.margin><Insets left="-2.0" /></HBox.margin>
+		        </Pane>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irAColecciones">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/colecciones.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblColecciones" text="Colecciones" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irASobres">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/cajas.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblSobres" text="Sobres/Cajas" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irAWishList">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/whislist.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblWishList" text="WishList" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irABusqueda">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/busqueda.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblBusqueda" text="Búsqueda" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irAAjustes">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/ajustes.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblAjustes" text="Ajustes" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		    </children>
+		</HBox>
+			
+            <LineChart fx:id="graficoColeccion" prefHeight="200.0" prefWidth="1000.0" title="Evolución de precios">
+                <xAxis>
+				    <CategoryAxis label="Fecha" />
+				</xAxis>
+                <yAxis>
+                    <NumberAxis label="€" />
+                </yAxis>
+                <VBox.margin><Insets left="-15.0" /></VBox.margin>
+            </LineChart>
+            
+     
+
+            <ScrollPane fitToWidth="true" prefHeight="450.0" prefWidth="1250.0">
+                <content>
+                   <GridPane fx:id="contenedorCartas" hgap="10" vgap="10" styleClass="grid-cartas">
+					    <columnConstraints>
+					        <ColumnConstraints percentWidth="25"/>
+					        <ColumnConstraints percentWidth="25"/>
+					        <ColumnConstraints percentWidth="25"/>
+					        <ColumnConstraints percentWidth="25"/>
+					    </columnConstraints>
+					</GridPane>
+                </content>
+                <VBox.margin><Insets left="15.0" right="20.0" /></VBox.margin>
+            </ScrollPane>
+
+        </VBox>
+                <Button fx:id="btnVolver" text="❌" layoutX="1250" layoutY="60" onMouseClicked="#irAColecciones" />
+                <Button fx:id="btnExportar" text="Exportar Colección" styleClass= "btnpequeno" layoutX="1090" layoutY="60" onAction="#exportarColeccionActual"/>
+                
+    </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="fondos" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.RegistroController">
+   <children>
+      <VBox id="panelUsuarioCorreo" alignment="CENTER" layoutX="58.0" layoutY="36.0" prefHeight="632.0" prefWidth="459.0">
+         <children>
+            <Label fx:id="txtRegistro" alignment="CENTER" text="Registro" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="-200.0" />
+               </VBox.margin>
+            </Label>
+
+            <Label alignment="CENTER" styleClass="subtituloSeccion" text="Introduce tu correo electrónico para que podamos registrarte" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+
+            <Label alignment="CENTER" styleClass="textosCajas" text="Correo electrónico">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+
+            <TextField fx:id="txtCorreo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="310.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+
+            <Label alignment="CENTER" styleClass="textosCajas" text="Nombre de usuario">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+
+            <TextField fx:id="txtNombreUsuario" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="310.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+
+            <Button fx:id="btnContinuar" defaultButton="true" onAction="#irASiguientePaso" prefHeight="55.0" prefWidth="66.0" styleClass="btncontinuar" text="🢂">
+               <VBox.margin>
+                  <Insets bottom="-50.0" top="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+
+            <Label fx:id="txtNoValido" alignment="CENTER" styleClass="textosCajas" text="El correo electrónico o nombre de usuario no es válido" visible="false">
+               <VBox.margin>
+                  <Insets right="-100.0" top="-49.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

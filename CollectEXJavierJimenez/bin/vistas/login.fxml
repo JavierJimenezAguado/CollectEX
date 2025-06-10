@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="fondos"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.LoginController">
+
+    <children>
+        <Pane fx:id="fondoPane" opacity="0.9" prefHeight="720.0" prefWidth="409.0">
+
+            <VBox alignment="CENTER" layoutX="63" layoutY="26" prefHeight="672.0" prefWidth="278" spacing="20">
+
+                <Pane fx:id="logoLogin" prefHeight="182.0" prefWidth="278.0">
+                    <VBox.margin><Insets bottom="40.0" top="-100.0" /></VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </Pane>
+
+                <Label id="inicioSesion" fx:id="txtInicioSesion" prefHeight="204.0" prefWidth="278.0" styleClass="titulo"  text="Inicio de sesión" textAlignment="CENTER" wrapText="true">
+                    <VBox.margin><Insets top="-125.0" /></VBox.margin>
+                </Label>
+
+                <Label styleClass="textosCajas"  text="Usuario">
+               <VBox.margin>
+                  <Insets top="-75.0" />
+               </VBox.margin></Label>
+                <TextField id="txtUsuario" fx:id="txtCorreo" prefHeight="28" prefWidth="278">
+               <VBox.margin>
+                  <Insets top="-15.0" />
+               </VBox.margin></TextField>
+
+                <Label styleClass="textosCajas" text="Contraseña" />
+                <PasswordField id="txtContrasena" fx:id="txtContrasena" prefHeight="31" prefWidth="278">
+               <VBox.margin>
+                  <Insets top="-15.0" />
+               </VBox.margin></PasswordField>
+            <Label id="txtNoValido" fx:id="lblError" layoutX="90.0" layoutY="456.0" onMouseClicked="#recuperarCuentaClick"  text="Usuario o contraseña incorrectos" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets right="-150.0" top="-20.0" />
+               </VBox.margin>
+            </Label>
+
+                <Label id="hola" fx:id="recuperarCuenta" onMouseClicked="#recuperarCuentaClick" styleClass="textosEnlaces"  text="He olvidado mi contraseña">
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+
+                <Button fx:id="btnIniciarSesion" defaultButton="true" onAction="#inicioSesion" prefWidth="180" styleClass="btncontinuar" text="Iniciar sesión">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+
+                <Label fx:id="crearCuenta" onMouseClicked="#crearCuentaClick" styleClass="textosEnlaces" text="Crear cuenta">
+               <padding>
+                  <Insets top="-20.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+
+            </VBox>
+        </Pane>
+    </children>
+</AnchorPane>

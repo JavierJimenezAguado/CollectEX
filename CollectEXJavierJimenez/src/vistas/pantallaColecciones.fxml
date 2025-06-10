@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+
+
+<AnchorPane fx:id="panelPrincipal" prefHeight="720.0" prefWidth="1280.0" styleClass="root"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ColeccionesController">
+
+    <children>
+
+         <HBox fx:id="panelSuperior" prefHeight="54.0" prefWidth="1280.0" styleClass="panelSuperior">
+		    <children>
+		
+		        <Pane fx:id="logoEsquina" prefHeight="54.0" prefWidth="74.0" styleClass="logoEsquina">
+		            <padding><Insets left="10.0" /></padding>
+		            <HBox.margin><Insets left="-2.0" /></HBox.margin>
+		        </Pane>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irAColecciones">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/colecciones.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblColecciones" text="Colecciones" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irASobres">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/cajas.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblSobres" text="Sobres/Cajas" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irAWishList">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/whislist.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblWishList" text="WishList" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irABusqueda">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/busqueda.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblBusqueda" text="Búsqueda" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0"/>
+		
+		        <HBox alignment="CENTER" spacing="5" onMouseClicked="#irAAjustes">
+		            <ImageView fitWidth="24.0" fitHeight="24.0">
+		                <image><Image url="@/imagenes/ajustes.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblAjustes" text="Ajustes" styleClass="etiquetasPanelSuperior"/>
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		    </children>
+		</HBox>
+
+        <Label layoutX="33.0" layoutY="70.0" onMouseClicked="#irAColecciones" styleClass="etiquetasPanelSuperior" text="Lista de colecciones:" />
+
+		<ScrollPane fx:id="scrollColecciones" fitToWidth="true"
+		                hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+		                AnchorPane.topAnchor="120"         
+		                AnchorPane.leftAnchor="15"
+		                AnchorPane.rightAnchor="15"
+		                AnchorPane.bottomAnchor="15">      
+		        <content>
+		            <GridPane fx:id="contenedorColecciones" hgap="25" vgap="25">
+		            
+		                <columnConstraints>
+		                    <ColumnConstraints percentWidth="50"/>
+		                    <ColumnConstraints percentWidth="50"/>
+		                </columnConstraints>
+		                <padding>
+		                    <Insets top="10" left="10" right="10" bottom="10"/>
+		                </padding>
+		            </GridPane>
+		        </content>
+		    </ScrollPane>
+
+    <Button fx:id="btnAnadirColeccion" layoutX="1075" layoutY="65" text="Añadir colección" onAction="#nuevaColeccion"/> 
+   
+    </children>
+</AnchorPane>

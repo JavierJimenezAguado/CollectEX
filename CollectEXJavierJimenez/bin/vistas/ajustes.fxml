@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="panelPrincipal" prefHeight="720.0" prefWidth="1280.0" styleClass="root" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.AjustesController">
+    <children>
+		 <HBox fx:id="panelSuperior" prefHeight="54.0" prefWidth="1280.0" styleClass="panelSuperior">
+		    <children>
+		
+		        <Pane fx:id="logoEsquina" prefHeight="54.0" prefWidth="74.0" styleClass="logoEsquina">
+		            <padding><Insets left="10.0" /></padding>
+		            <HBox.margin><Insets left="-2.0" /></HBox.margin>
+		        </Pane>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0" />
+
+		        <HBox alignment="CENTER" onMouseClicked="#irAColecciones" spacing="5">
+		            <ImageView fitHeight="24.0" fitWidth="24.0">
+		                <image><Image url="@/imagenes/colecciones.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblColecciones" styleClass="etiquetasPanelSuperior" text="Colecciones" />
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0" />
+		
+		        <HBox alignment="CENTER" onMouseClicked="#irASobres" spacing="5">
+		            <ImageView fitHeight="24.0" fitWidth="24.0">
+		                <image><Image url="@/imagenes/cajas.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblSobres" styleClass="etiquetasPanelSuperior" text="Sobres/Cajas" />
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0" />
+		
+		        <HBox alignment="CENTER" onMouseClicked="#irAWishList" spacing="5">
+		            <ImageView fitHeight="24.0" fitWidth="24.0">
+		                <image><Image url="@/imagenes/whislist.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblWishList" styleClass="etiquetasPanelSuperior" text="WishList" />
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0" />
+		
+		        <HBox alignment="CENTER" onMouseClicked="#irABusqueda" spacing="5">
+		            <ImageView fitHeight="24.0" fitWidth="24.0">
+		                <image><Image url="@/imagenes/busqueda.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblBusqueda" styleClass="etiquetasPanelSuperior" text="Búsqueda" />
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		        <Separator orientation="VERTICAL" prefHeight="20.0" />
+		
+		        <HBox alignment="CENTER" onMouseClicked="#irAAjustes" spacing="5">
+		            <ImageView fitHeight="24.0" fitWidth="24.0">
+		                <image><Image url="@/imagenes/ajustes.png" /></image>
+		            </ImageView>
+		            <Label fx:id="lblAjustes" styleClass="etiquetasPanelSuperior" text="Ajustes" />
+		            <HBox.margin><Insets left="50.0" right="50.0" top="0.0" /></HBox.margin>
+		        </HBox>
+		
+		    </children>
+		</HBox>
+
+      <Pane layoutY="54.0" prefHeight="667.0" prefWidth="331.0">
+         <children>
+            <Label layoutX="94.0" layoutY="30.0" styleClass="etiquetasVarias" text="Cambio de tema" />
+            <Separator layoutX="63.0" layoutY="73.0" prefWidth="200.0" />
+            <Label fx:id="lblCerrarSesion" layoutX="108.0" layoutY="618.0" styleClass="etiquetasPanelSuperior" text="Cerrar sesión" onMouseClicked="#cerrarSesion"/>
+            <Separator layoutX="63.0" layoutY="607.0" prefWidth="200.0" />
+         </children>
+      </Pane>
+      <Button id="btnModeloNormal" fx:id="btnModeloNormal" layoutX="724.0" layoutY="218.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" styleClass="selector-color" />
+      <Button id="btnModeloVerde" fx:id="btnModeloVerde" layoutX="724.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" styleClass="selector-color" />
+      <Button id="btnModeloNaranja" fx:id="btnModeloNaranja" layoutX="1012.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" styleClass="selector-color" />
+      <Button id="btnModeloAzul" fx:id="btnModeloAzul" layoutX="1012.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" styleClass="selector-color" />
+      <Label layoutX="509.0" layoutY="217.0" styleClass="label-mini" text="Morado (Tipo siniestro)" />
+      <Label layoutX="838.0" layoutY="217.0" styleClass="label-mini" text="Naranja (Charizard)" />
+      <Label layoutX="838.0" layoutY="334.0" styleClass="label-mini" text="Azul (Squirtle)" />
+      <Label layoutX="509.0" layoutY="334.0" styleClass="label-mini" text="Verde (Bulbasaur)" />
+      <Button id="btnScraper" fx:id="btnScraper" layoutX="613.0" layoutY="472.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#ejecutarScrapper" prefHeight="25.0" prefWidth="282.0" text="Actualizar precios" />
+      <Label layoutX="443.0" layoutY="97.0" styleClass="etiquetasVarias" text="Escoge el color de tu aplicación:" />
+	  <HBox fx:id="contenedorCarga" alignment="CENTER_LEFT" layoutX="920.0" layoutY="600.0" spacing="10.0" visible="false">
+	  		<Label fx:id="lblEstadoScraper" text="Actualizando precios..." styleClass="etiquetasVarias" visible="false"/>
+		    <ImageView fx:id="imgCargando" fitHeight="114.0" fitWidth="130.0" preserveRatio="true" />
+	  </HBox>
+      <Label layoutX="700.0" layoutY="422.0" styleClass="etiquetasVarias" text="Scrapper" />
+      <Label layoutX="600.0" layoutY="550.0" styleClass="etiquetasVarias" text="Importa o exporta tus colecciones" />
+      <Button fx:id="btnExportar" layoutX="500.0" layoutY="600" prefWidth="282.0" prefHeight="25.0" styleClass="btncontinuar" text="Exportar colecciones" onAction="#exportarColecciones"/>
+        
+	  <Button fx:id="btnImportar" layoutX="800" layoutY="600.0" prefWidth="282.0" prefHeight="25.0" styleClass="btncontinuar" text="Importar colecciones" onAction="#importarColecciones"/>
+     
+    </children>
+</AnchorPane>

@@ -1,0 +1,237 @@
+/* fondo general*/
+.root{
+    -fx-background-color:#241335;
+    -fx-background-size:cover; -fx-background-repeat:no-repeat; 
+	-fx-background-position:center center;
+	-tema: "morado";
+}
+.fondos{
+    -fx-background-color:linear-gradient(#241335 60%, #3D2060 100%);
+    -fx-background-image:url("/imagenes/pokestop.png");               
+    -fx-background-size:cover; -fx-background-repeat:no-repeat; -fx-background-position:center center;
+}
+
+/* logos */
+#panelLogo,#logoLogin{
+    -fx-background-image:url("/imagenes/logoNormal.png");              
+    -fx-background-size:contain; -fx-background-repeat:no-repeat; -fx-background-position:center center;
+    -fx-background-color:#3D2060;
+}
+
+.logoEsquina{
+    -fx-background-image:url("/imagenes/logoNormalMini.jpg");
+    -fx-background-size:100% 100%; -fx-background-repeat:no-repeat; -fx-background-position:center center;
+}
+
+/* cabeceras login */
+#inicioSesion,#recuperarCuenta{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+#inicioSesion{   
+	-fx-font-size:35px; 
+}
+
+#recuperarCuenta{
+	-fx-font-size:50px; 
+}
+
+/* textos generales */
+.titulo { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:40px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#F8F4FF; 
+}
+.label { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:14px; 
+	-fx-text-fill:#F8F4FF; 
+}
+
+.subtituloSeccion { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:18px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#D9C6FF; 
+}
+
+.tituloColeccion  { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:18px; 
+	-fx-font-weight:bold; 
+}
+
+.etiquetasPanelSuperior{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:22px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+.label-mini{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:18px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#F8F4FF; 
+}
+
+.etiquetasPanelSuperior:hover {
+    -fx-effect: dropshadow(gaussian, #EF8FFF, 10, 0.6, 0, 0);
+    -fx-cursor: hand;
+}
+
+.etiquetasVarias { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 22px; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #FFFFFF; 
+}
+
+/* textos especificos */
+#txtRegistro,#txtInicioSesion{ 
+	-fx-font-size:80px; 
+	-fx-font-family:"Inter"; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+#txtNoValido  { 
+	-fx-font-size:10px; 
+	-fx-text-fill:#FF5E5E; 
+	-fx-font-weight:bold; 
+}
+.textosCajas  { 
+	-fx-font-size:24px; 
+	-fx-font-family:"Inter"; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+.textosEnlaces{ 
+	-fx-font-size:10px; 
+	-fx-text-fill:#241335; 
+}
+#txtDescripcion{ 
+	-fx-font-size:10px; 
+	-fx-text-fill:#D9C6FF;
+}
+#nombreCarta  { 
+	-fx-font-size:28px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+/* paneles */
+.panelSuperior{
+    -fx-background-color:linear-gradient(#8B4BFF 0%, #3D2060 100%);
+    -fx-border-color:transparent transparent #FCD53F transparent;
+    -fx-border-width:0 0 3 0;
+}
+
+
+#fondoPane,#panelUsuarioCorreo{
+	 -fx-background-color:#D9C6FF; 
+	 -fx-opacity: 1.0;
+ }
+ 
+ /* bloques */
+.bloqueColeccion{
+    -fx-background-color:#3D2060;
+    -fx-border-color:#D9C6FF;
+    -fx-border-radius:10; -fx-background-radius:10;
+    -fx-padding:15;
+    -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.4),10,0.2,0,4);
+}
+.bloqueColeccion:hover{
+    -fx-scale-x:1.06; -fx-scale-y:1.06;
+    -fx-background-color:#8B4BFF;
+    -fx-border-color:#FCD53F;
+    -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.6),25,0.4,0,8);
+}
+/* tarjetas */
+
+.tarjetaCarta{
+    -fx-background-color:#3D2060;
+    -fx-border-color:#D9C6FF;
+    -fx-border-radius:10; -fx-background-radius:10;
+    -fx-padding:10;
+    -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.25),8,0.2,0,3);
+    -fx-cursor:hand; -fx-transition:all .2s ease-in-out;
+}
+.tarjetaCarta:hover{
+    -fx-scale-x:1.08; -fx-scale-y:1.08;
+    -fx-background-color:#8B4BFF;
+    -fx-border-color:#FCD53F;
+    -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.55),20,0.35,0,6);
+}
+.tituloCarta{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:14px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+.precioCarta{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:12px; 
+	-fx-text-fill:#FCD53F; 
+}
+
+/* botones */
+.btncontinuar,.button{
+    -fx-background-color:#3D2060;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-family:"Inter"; -fx-font-size:20; -fx-font-weight:bold;
+    -fx-background-radius:6;
+}
+.btncontinuar:hover,.button:hover{ -fx-background-color:#8B4BFF; }
+
+
+.btnpequeno{
+    -fx-background-color:#8B4BFF;
+    -fx-font-size:14px; -fx-padding:4 14; -fx-min-height:28; -fx-background-radius:4;
+}
+.btnpequeno:hover{ -fx-background-color:#FCD53F; -fx-text-fill:#241335; }
+
+
+#botonBuscar{
+    -fx-background-color:#8B4BFF;
+    -fx-text-fill:#FFFFFF; -fx-font-size:14px; -fx-padding:4 14; -fx-background-radius:4;
+}
+
+#btnVolver{ -fx-background-color:#8B4BFF; -fx-min-width:24; -fx-min-height:24; -fx-font-size:0; }
+
+/* selector de tema */
+.selector-color{
+    -fx-min-width:28; -fx-max-width:28;
+    -fx-min-height:25; -fx-max-height:25;
+    -fx-background-color:derive(#D9C6FF,-15%);
+    -fx-border-color:#241335; -fx-border-width:1;
+}
+
+/* graficas*/
+.chart-title        { 
+	-fx-text-fill:#D9C6FF; 
+	-fx-font-size:16; 
+	-fx-font-weight:bold; 
+}
+.chart-plot-background{ 
+	-fx-background-color:#808080; 
+}
+.chart-legend       { 
+	-fx-background-color:transparent; 
+	-fx-text-fill:#F8F4FF; 
+}
+
+.axis-label         { 
+	-fx-text-fill:#8B4BFF;
+	 -fx-font-weight:bold; 
+ }
+ 
+.axis-tick-mark { 
+	-fx-stroke:#8B4BFF; 
+}
+.axis { 
+	-fx-tick-label-fill:#8B4BFF;
+}
