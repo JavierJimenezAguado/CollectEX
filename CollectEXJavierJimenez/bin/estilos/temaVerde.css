@@ -43,12 +43,38 @@
 	-fx-font-size: 50px; 
 }
 
-/* ---------- Tipografías generales ---------- */
-.titulo           { -fx-font-family: "Inter"; -fx-font-size: 40px; -fx-font-weight: bold; -fx-text-fill: #E4FFE8; }
-.label            { -fx-font-family: "Inter"; -fx-font-size: 14px; -fx-text-fill: #E4FFE8; }
-.subtituloSeccion { -fx-font-family: "Inter"; -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #A9E5BB; }
-.tituloColeccion  { -fx-font-family: "Inter"; -fx-font-size: 18px; -fx-font-weight: bold; }
-.etiquetasPanelSuperior { -fx-font-family: "Inter"; -fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; }
+/* textos generales  */
+.titulo { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 40px; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #E4FFE8;
+}
+
+.label { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 14px; 
+	-fx-text-fill: #E4FFE8; 
+}
+
+.subtituloSeccion { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 18px; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #A9E5BB; 
+}
+.tituloColeccion { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 18px; 
+	-fx-font-weight: bold; 
+}
+
+.etiquetasPanelSuperior { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 22px; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #FFFFFF;
+}
 
 .etiquetasPanelSuperior:hover {
     -fx-effect: dropshadow(gaussian, #D2FF4C, 10, 0.6, 0, 0);
@@ -67,28 +93,56 @@
 }
 
 
-/* ---------- Textos específicos ---------- */
-#txtRegistro, #txtInicioSesion { -fx-font-size: 80px; -fx-font-family: "Inter"; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; }
-#txtNoValido   { -fx-font-size: 10px; -fx-text-fill: #FF5E5E; -fx-font-weight: bold; }
-.textosCajas   { -fx-font-size: 24px; -fx-font-family: "Inter"; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; }
-.textosEnlaces { -fx-font-size: 10px; -fx-text-fill: #0F3D2E; }
-#txtDescripcion { -fx-font-size: 10px; -fx-text-fill: #A9E5BB; }
-#nombreCarta   { -fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; }
+/* textos especificos */
+#txtRegistro, #txtInicioSesion { 
+	-fx-font-size: 80px; 
+	-fx-font-family: "Inter"; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #FFFFFF; 
+}
 
-/* ---------- Panel superior ---------- */
+#txtNoValido { 
+	-fx-font-size: 10px; 
+	-fx-text-fill: #FF5E5E; 
+	-fx-font-weight: bold; 
+}
+
+.textosCajas{ 
+	-fx-font-size: 24px; -fx-font-family: "Inter"; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #FFFFFF; 
+}
+
+.textosEnlaces { 
+	-fx-font-size: 10px; 
+	-fx-text-fill: #0F3D2E; 
+}
+
+#txtDescripcion { 
+	-fx-font-size: 10px; 
+	-fx-text-fill: #A9E5BB; 
+}
+
+#nombreCarta{ 
+	-fx-font-size: 28px; 
+	-fx-font-weight: bold;
+	 -fx-text-fill: #FFFFFF;
+  }
+
+/* paneles */
 .panelSuperior {
     -fx-background-color: linear-gradient(#238357 0%, #1F6F46 100%);
     -fx-border-color: transparent transparent #D2FF4C transparent;
     -fx-border-width: 0 0 3 0;
 }
 
-/* ---------- Formulario / panes claros ---------- */
+
 #fondoPane, #panelUsuarioCorreo { 
 	-fx-background-color: #A9E5BB; 
 	-fx-opacity: 1.0;
 }
 
-/* ---------- Bloques y tarjetas ---------- */
+/* bloques */
 .bloqueColeccion {
     -fx-background-color: #1F6F46;
     -fx-border-color: #A9E5BB;
@@ -105,6 +159,7 @@
     -fx-border-color: #D2FF4C;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 25, 0.4, 0, 8);
 }
+/* tarjetas */
 .tarjetaCarta {
     -fx-background-color: #1F6F46;
     -fx-border-color: #A9E5BB;
@@ -125,7 +180,7 @@
 .tituloCarta { -fx-font-family: "Inter"; -fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; }
 .precioCarta { -fx-font-family: "Inter"; -fx-font-size: 12; -fx-text-fill: #D2FF4C; }
 
-/* ---------- Botones ---------- */
+/* botones */
 .btncontinuar, .button {
     -fx-background-color: #238357;
     -fx-text-fill: #FFFFFF;
@@ -163,7 +218,7 @@
 
 #btnVolver { -fx-background-color: #3FB072; -fx-min-width: 24; -fx-min-height: 24; -fx-font-size: 0; }
 
-/* ---------- Selector de tema ---------- */
+/* selector de tema */
 .selector-color {
     -fx-min-width: 28; -fx-max-width: 28;
     -fx-min-height: 25; -fx-max-height: 25;
@@ -172,11 +227,30 @@
     -fx-border-width: 1;
 }
 
-/* ---------- Gráficas ---------- */
-.chart-title  { -fx-text-fill: #A9E5BB; -fx-font-size: 16; -fx-font-weight: bold; }
-.chart-plot-background { -fx-background-color: #FFFFFF; }
-.chart-legend { -fx-background-color: transparent; -fx-text-fill: #E4FFE8; }
-.axis-label   { -fx-text-fill: #3FB072; -fx-font-weight: bold; }
-.axis-tick-mark { -fx-stroke: #3FB072; }
-.axis         { -fx-tick-label-fill: #3FB072; }
+/* graficas */
+.chart-title  { 
+	-fx-text-fill: #A9E5BB; 
+	-fx-font-size: 16; 
+	-fx-font-weight: bold; 
+}
+
+.chart-plot-background { 
+	-fx-background-color: #FFFFFF; 
+}
+.chart-legend { 
+	-fx-background-color: transparent; 
+	-fx-text-fill: #E4FFE8; 
+}
+
+.axis-label   { 
+	-fx-text-fill: #3FB072; 
+	-fx-font-weight: bold; 
+}
+
+.axis-tick-mark { 
+	-fx-stroke: #3FB072; 
+}
+.axis { 
+	-fx-tick-label-fill: #3FB072;
+ }
 

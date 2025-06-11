@@ -91,17 +91,17 @@
       <BorderPane fx:id="imagenElemento" layoutX="123.0" layoutY="74.0" prefHeight="634.0" prefWidth="475.0" styleClass="panelSuperior" />
       <Pane layoutX="732.0" layoutY="279.0" prefHeight="430.0" prefWidth="465.0" styleClass="panelSuperior">
          <children>
-            <Label layoutX="157.0" layoutY="79.0" styleClass="etiquetasPanelSuperior" text="Avisar por correo:" />
-            <CheckBox id="ckMin" fx:id="ckMin" layoutX="103.0" layoutY="124.0" mnemonicParsing="false" styleClass="etiquetasPanelSuperior" text="Si baja de:" />
-            <CheckBox id="ckMax" fx:id="ckMax" layoutX="103.0" layoutY="164.0" mnemonicParsing="false" styleClass="etiquetasPanelSuperior" text="Si sube de:" />
+            <Label layoutX="157.0" layoutY="79.0" styleClass="label-mini" text="Avisar por correo:" />
+            <CheckBox id="ckMin" fx:id="ckMin" layoutX="103.0" layoutY="124.0" mnemonicParsing="false" styleClass="label-mini" text="Si baja de:" />
+            <CheckBox id="ckMax" fx:id="ckMax" layoutX="103.0" layoutY="164.0" mnemonicParsing="false" styleClass="label-mini" text="Si sube de:" />
             <TextField id="lblalertaMin" fx:id="lblalertaMin" layoutX="247.0" layoutY="125.0" prefHeight="25.0" prefWidth="83.0" />
             <TextField id="lblalertaMax" fx:id="lblalertaMax" layoutX="247.0" layoutY="165.0" prefHeight="25.0" prefWidth="83.0" />
-            <Label layoutX="336.0" layoutY="124.0" prefHeight="27.0" prefWidth="28.0" styleClass="etiquetasPanelSuperior" text="€" />
-            <Label layoutX="336.0" layoutY="164.0" prefHeight="27.0" prefWidth="28.0" styleClass="etiquetasPanelSuperior" text="€" />
-            <Label layoutX="101.0" layoutY="207.0" styleClass="etiquetasPanelSuperior" text="Precio pagado:" />
-            <TextField id="lblprecioPagado" fx:id="lblprecioPagado" layoutX="247.0" layoutY="208.0" prefHeight="25.0" prefWidth="83.0" />
-            <Label layoutX="336.0" layoutY="207.0" prefHeight="27.0" prefWidth="28.0" styleClass="etiquetasPanelSuperior" text="€" />
-            <Label id="nombreCarta" fx:id="nombreElemento" layoutX="140.0" layoutY="14.0" styleClass="etiquetasPanelSuperior" text="Nombre Carta" />
+            <Label layoutX="336.0" layoutY="124.0" prefHeight="27.0" prefWidth="28.0" styleClass="label-mini" text="€" />
+            <Label layoutX="336.0" layoutY="164.0" prefHeight="27.0" prefWidth="28.0" styleClass="label-mini" text="€" />
+            <Label layoutX="101.0" layoutY="207.0" text="Precio pagado:" styleClass="label-mini" />
+            <TextField id="lblprecioPagado" fx:id="lblprecioPagado" styleClass="label-mini" layoutX="247.0" layoutY="208.0" prefHeight="20.0" prefWidth="83.0" />
+            <Label layoutX="336.0" layoutY="207.0" prefHeight="27.0" prefWidth="28.0" styleClass="label-mini" text="€" />
+             <Label fx:id="nombreElemento" layoutX="0.0" layoutY="14.0" prefWidth="465.0" text="Nombre Carta" alignment="CENTER" styleClass="titulo"/>
             <Button id="btnAnadirColeccion" fx:id="btnAnadir" layoutX="90.0" layoutY="300.0" mnemonicParsing="false" text="Añadir a producto cerrado" />
             <Label fx:id="tipoElemento" layoutX="190.0" layoutY="47.0" styleClass="subtituloSeccion" text="Expansion" textAlignment="CENTER" />
             <ImageView fx:id="imgCorazon" fitHeight="50.0" fitWidth="50.0" layoutX="392.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />

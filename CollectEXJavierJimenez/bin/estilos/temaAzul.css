@@ -46,7 +46,7 @@
 	-fx-font-size: 50px; 
 }
 
-/* tipografias generales */
+/* textos generales */
 .titulo { 
 	-fx-font-family:"Inter"; 
 	-fx-font-size:40px; 
@@ -132,6 +132,12 @@
 }
 
 #nombreCarta { 
+	-fx-font-size:28px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+#nombreElemento { 
 	-fx-font-size:28px; 
 	-fx-font-weight:bold; 
 	-fx-text-fill:#FFFFFF; 

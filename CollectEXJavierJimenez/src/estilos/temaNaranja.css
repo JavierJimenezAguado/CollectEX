@@ -124,6 +124,12 @@
 	-fx-text-fill:#FFFFFF; 
 }
 
+#nombreElemento { 
+	-fx-font-size:28px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
 
 /* paneles */
 .panelSuperior{

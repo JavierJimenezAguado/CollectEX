@@ -39,45 +39,105 @@
 	 -fx-font-size:50px;
 }
 
-/* ========== TIPOGRAFÍAS GENERALES ========== */
-.titulo           { -fx-font-family:"Inter"; -fx-font-size:40px; -fx-font-weight:bold; -fx-text-fill:#FFF9F3; }
-.label            { -fx-font-family:"Inter"; -fx-font-size:14px; -fx-text-fill:#FFF9F3; }
-.subtituloSeccion { -fx-font-family:"Inter"; -fx-font-size:18px; -fx-font-weight:bold; -fx-text-fill:#FFE2C4; }
-.tituloColeccion  { -fx-font-family:"Inter"; -fx-font-size:18px; -fx-font-weight:bold; }
-.etiquetasPanelSuperior { -fx-font-family:"Inter"; -fx-font-size:22px; -fx-font-weight:bold; -fx-text-fill:#FFFFFF; }
-.label-mini{ -fx-font-family:"Inter"; -fx-font-size:18px; -fx-font-weight:bold; -fx-text-fill:#FFF9F3; }
+/* textos generales */
+.titulo { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:40px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFF9F3; 
+}
+.label { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:14px; 
+	-fx-text-fill:#FFF9F3; 
+}
+.subtituloSeccion { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:18px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFE2C4; 
+}
+
+.tituloColeccion  { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:18px; 
+	-fx-font-weight:bold; 
+}
+.etiquetasPanelSuperior { 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:22px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+.label-mini{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:18px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFF9F3;
+ }
 
 .etiquetasPanelSuperior:hover {
     -fx-effect: dropshadow(gaussian, #FFCD4C, 10, 0.6, 0, 0);
     -fx-cursor: hand;
 }
 
-.etiquetasVarias { -fx-font-family: "Inter"; -fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; }
+.etiquetasVarias { 
+	-fx-font-family: "Inter"; 
+	-fx-font-size: 22px; 
+	-fx-font-weight: bold; 
+	-fx-text-fill: #FFFFFF; 
+}
 
 
-/* ========== TEXTOS ESPECÍFICOS ========== */
-#txtRegistro,#txtInicioSesion{ -fx-font-size:80px; -fx-font-family:"Inter"; -fx-font-weight:bold; -fx-text-fill:#FFFFFF; }
-#txtNoValido   { -fx-font-size:10px; -fx-text-fill:#FF5E5E; -fx-font-weight:bold; }
-.textosCajas   { -fx-font-size:24px; -fx-font-family:"Inter"; -fx-font-weight:bold; -fx-text-fill:#FFFFFF; }
-.textosEnlaces { -fx-font-size:10px; -fx-text-fill:#4B2400; }
-#txtDescripcion{ -fx-font-size:10px; -fx-text-fill:#FFE2C4; }
-#nombreCarta   { -fx-font-size:28px; -fx-font-weight:bold; -fx-text-fill:#FFFFFF; }
+/* textos especificos */
+#txtRegistro,#txtInicioSesion{ 
+	-fx-font-size:80px; 
+	-fx-font-family:"Inter"; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
+#txtNoValido   { 
+	-fx-font-size:10px; 
+	-fx-text-fill:#FF5E5E; 
+	-fx-font-weight:bold; 
+}
+.textosCajas { 
+	-fx-font-size:24px; 
+	-fx-font-family:"Inter"; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+.textosEnlaces { 
+	-fx-font-size:10px; 
+	-fx-text-fill:#4B2400; 
+}
+
+#txtDescripcion{ 
+	-fx-font-size:10px; 
+	-fx-text-fill:#FFE2C4;
+}
+#nombreCarta { 
+	-fx-font-size:28px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
 
 
-/* ========== PANEL SUPERIOR ========== */
+/* paneles */
 .panelSuperior{
     -fx-background-color:linear-gradient(#D65F00 0%, #7A3700 100%);
     -fx-border-color:transparent transparent #3E7E9A transparent;
     -fx-border-width:0 0 3 0;
 }
 
-/* ========== PANELES CLAROS / INPUTS ========== */
 #fondoPane,#panelUsuarioCorreo{ 
 	-fx-background-color:#FFE2C4;
 	-fx-opacity: 1.0; 
 }
 
-/* ========== BLOQUES Y TARJETAS (mismas medidas) ========== */
+/* bloques */
 .bloqueColeccion{
     -fx-background-color:#7A3700;
     -fx-border-color:#FFE2C4;
@@ -91,6 +151,8 @@
     -fx-border-color:#3E7E9A;
     -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.6),25,0.4,0,8);
 }
+
+/* tarjetas */
 
 .tarjetaCarta{
     -fx-background-color:#7A3700;
@@ -106,10 +168,19 @@
     -fx-border-color:#3E7E9A;
     -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.55),20,0.35,0,6);
 }
-.tituloCarta{ -fx-font-family:"Inter"; -fx-font-size:14px; -fx-font-weight:bold; -fx-text-fill:#FFFFFF; }
-.precioCarta{ -fx-font-family:"Inter"; -fx-font-size:12px; -fx-text-fill:#3E7E9A; }
+.tituloCarta{ 
+	-fx-font-family:"Inter"; 
+	-fx-font-size:14px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF;
+ }
+ 
+.precioCarta{ -fx-font-family:"Inter"; 
+	-fx-font-size:12px; 
+	-fx-text-fill:#3E7E9A; 
+}
 
-/* ========== BOTONES (mismas medidas) ========== */
+/* botones */
 .btncontinuar,.button{
     -fx-background-color:#7A3700;
     -fx-text-fill:#FFFFFF;
@@ -118,26 +189,40 @@
 	-fx-opacity: 1.0;
 }
 .btncontinuar:hover,.button:hover{
-    -fx-background-color:#3E7E9A; -fx-text-fill:#FFFFFF;
+    -fx-background-color:#3E7E9A; 
+	-fx-text-fill:#FFFFFF;
 	-fx-opacity: 1.0;
 }
 
-/* Botón reducido reutilizable */
 .btnpequeno{
     -fx-background-color:#D65F00;
-    -fx-font-size:14px; -fx-padding:4 14; -fx-min-height:28; -fx-background-radius:4;
+    -fx-font-size:14px; 
+	-fx-padding:4 14; 
+	-fx-min-height:28; 
+	-fx-background-radius:4;
 }
-.btnpequeno:hover{ -fx-background-color:#3E7E9A; -fx-text-fill:#FFFFFF; }
+.btnpequeno:hover{ 
+	-fx-background-color:#3E7E9A; 
+	-fx-text-fill:#FFFFFF; 
+}
 
-/* Botón buscar – mismas medidas */
+
 #botonBuscar{
     -fx-background-color:#D65F00;
-    -fx-text-fill:#FFFFFF; -fx-font-size:14px; -fx-padding:4 14; -fx-background-radius:4;
+    -fx-text-fill:#FFFFFF; 
+	-fx-font-size:14px; 
+	-fx-padding:4 14; 
+	-fx-background-radius:4;
 }
 
-#btnVolver{ -fx-background-color:#D65F00; -fx-min-width:24; -fx-min-height:24; -fx-font-size:0; }
+#btnVolver{ 
+	-fx-background-color:#D65F00; 
+	-fx-min-width:24; 
+	-fx-min-height:24; 
+	-fx-font-size:0; 
+}
 
-/* ========== SELECTOR DE TEMA ========== */
+/* =selector tema */
 .selector-color{
     -fx-min-width:28; -fx-max-width:28;
     -fx-min-height:25; -fx-max-height:25;
@@ -145,11 +230,30 @@
     -fx-border-color:#4B2400; -fx-border-width:1;
 }
 
-/* ========== GRÁFICAS ========== */
-.chart-title  { -fx-text-fill:#FFE2C4; -fx-font-size:16; -fx-font-weight:bold; }
-.chart-plot-background{ -fx-background-color:#FFFFFF; }
-.chart-legend{ -fx-background-color:transparent; -fx-text-fill:#FFF9F3; }
-.axis-label   { -fx-text-fill:#D65F00; -fx-font-weight:bold; }
-.axis-tick-mark{ -fx-stroke:#D65F00; }
-.axis{ -fx-tick-label-fill:#D65F00; }
+/* graficas */
+.chart-title  { 
+	-fx-text-fill:#FFE2C4; 
+	-fx-font-size:16; 
+	-fx-font-weight:bold;
+ }	
+ 
+.chart-plot-background{ 
+	-fx-background-color:#FFFFFF; 
+}
+.chart-legend{ 
+	-fx-background-color:transparent; 
+	-fx-text-fill:#FFF9F3; 
+}
+.axis-label{ 
+	-fx-text-fill:#D65F00; 
+	-fx-font-weight:bold; 
+}
+
+.axis-tick-mark{ 
+	-fx-stroke:#D65F00; 
+}
+
+.axis{ 
+	-fx-tick-label-fill:#D65F00; 
+}
 

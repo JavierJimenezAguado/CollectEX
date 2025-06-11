@@ -38,7 +38,7 @@
 	-fx-font-size:50px; 
 }
 
-/* ---------- TIPOGRAFÍA GENERAL ---------- */
+/* textos generales */
 .titulo { 
 	-fx-font-family:"Inter"; 
 	-fx-font-size:40px; 
@@ -90,7 +90,7 @@
 	-fx-text-fill: #FFFFFF; 
 }
 
-/* ---------- TEXTOS ESPECÍFICOS ---------- */
+/* textos especificos */
 #txtRegistro,#txtInicioSesion{ 
 	-fx-font-size:80px; 
 	-fx-font-family:"Inter"; 
@@ -123,20 +123,20 @@
 	-fx-text-fill:#FFFFFF; 
 }
 
-/* ---------- PANEL SUPERIOR ---------- */
+/* paneles */
 .panelSuperior{
     -fx-background-color:linear-gradient(#8B4BFF 0%, #3D2060 100%);
     -fx-border-color:transparent transparent #FCD53F transparent;
     -fx-border-width:0 0 3 0;
 }
 
-/* ---------- IN/OUT PANELS ---------- */
+
 #fondoPane,#panelUsuarioCorreo{
 	 -fx-background-color:#D9C6FF; 
 	 -fx-opacity: 1.0;
  }
-
-/* ---------- BLOQUES Y TARJETAS ---------- */
+ 
+ /* bloques */
 .bloqueColeccion{
     -fx-background-color:#3D2060;
     -fx-border-color:#D9C6FF;
@@ -150,6 +150,7 @@
     -fx-border-color:#FCD53F;
     -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.6),25,0.4,0,8);
 }
+/* tarjetas */
 
 .tarjetaCarta{
     -fx-background-color:#3D2060;
@@ -177,7 +178,7 @@
 	-fx-text-fill:#FCD53F; 
 }
 
-/* ---------- BOTONES (tamaños idénticos) ---------- */
+/* botones */
 .btncontinuar,.button{
     -fx-background-color:#3D2060;
     -fx-text-fill:#FFFFFF;
@@ -186,23 +187,22 @@
 }
 .btncontinuar:hover,.button:hover{ -fx-background-color:#8B4BFF; }
 
-/* Botón pequeño */
+
 .btnpequeno{
     -fx-background-color:#8B4BFF;
     -fx-font-size:14px; -fx-padding:4 14; -fx-min-height:28; -fx-background-radius:4;
 }
 .btnpequeno:hover{ -fx-background-color:#FCD53F; -fx-text-fill:#241335; }
 
-/* Botón buscar */
+
 #botonBuscar{
     -fx-background-color:#8B4BFF;
     -fx-text-fill:#FFFFFF; -fx-font-size:14px; -fx-padding:4 14; -fx-background-radius:4;
 }
 
-/* Botón Volver mini */
 #btnVolver{ -fx-background-color:#8B4BFF; -fx-min-width:24; -fx-min-height:24; -fx-font-size:0; }
 
-/* ---------- SELECTOR TEMA ---------- */
+/* selector de tema */
 .selector-color{
     -fx-min-width:28; -fx-max-width:28;
     -fx-min-height:25; -fx-max-height:25;
@@ -210,7 +210,7 @@
     -fx-border-color:#241335; -fx-border-width:1;
 }
 
-/* ---------- GRÁFICAS ---------- */
+/* graficas*/
 .chart-title        { 
 	-fx-text-fill:#D9C6FF; 
 	-fx-font-size:16; 

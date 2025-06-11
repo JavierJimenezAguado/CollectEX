@@ -137,6 +137,12 @@
 	-fx-text-fill:#FFFFFF; 
 }
 
+#nombreElemento { 
+	-fx-font-size:28px; 
+	-fx-font-weight:bold; 
+	-fx-text-fill:#FFFFFF; 
+}
+
 /* paneles */
 .panelSuperior {
     -fx-background-color: linear-gradient(#3C8AB2 0%, #1E5673 100%);
